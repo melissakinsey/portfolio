@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.js"
-			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-			crossorigin="anonymous"
-		></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 		<script>
-			$(function () {
+			$(function ()
+			{
 				$("#header").load("header.html");
 				$("#footer").load("footer.html");
 			});
@@ -19,39 +18,24 @@
 		<!--Metatext-->
 		<meta name="Contact" />
 		<!--SEO Keywords-->
-		<meta
-			name="keywords"
-			content="portfolio, coding-boot-camp, technical-writing, programming, engineering"
-		/>
+		<meta name="keywords" content="portfolio, coding-boot-camp, technical-writing, programming, engineering" />
 		<!--Author-->
 		<meta name="author" content="Melissa Kinsey" />
 		<!--Favicon-->
-		<link
-			rel="shortcut icon"
-			type="image/png"
-			img
-			src="images/favicon.png"
-		/>
+		<link rel="shortcut icon" type="image/png" img src="images/favicon.png" />
 		<!--Viewport Dimensions-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Font Awesome Link -->
-		<script
-			src="https://kit.fontawesome.com/b401ccb608.js"
-			crossorigin="anonymous"
-		></script>
+		<script src="https://kit.fontawesome.com/b401ccb608.js" crossorigin="anonymous"></script>
 		<!--Bootstrap Link-->
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet" />
 		<!--CSS Link-->
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<!--BEGIN BODY-->
+
 	<body>
 		<!--NAV HEADER-->
 		<div id="header"></div>
@@ -76,11 +60,8 @@
 				<div class="col-sm-4">
 					<i class="fab fa-linkedin fa-3x"></i>
 					<p>
-						<a
-							href="http://www.linkedin.com/in/melissajaynekinsey/"
-						>
-							Connect with me on LinkedIn</a
-						>
+						<a href="http://www.linkedin.com/in/melissajaynekinsey/">
+							Connect with me on LinkedIn</a>
 					</p>
 				</div>
 
@@ -93,12 +74,7 @@
 		<div class="container-fluid bg-3 text-center">
 			<div class="row">
 				<div class="col-sm-6">
-					<img
-						src="assets/Melissa-8xr.png"
-						style="width: auto"
-						id="melissa"
-						alt="Melissa Kinsey"
-					/>
+					<img src="assets/Melissa-8xr.png" style="width: auto" id="melissa" alt="Melissa Kinsey" />
 					<div class="address">
 						<p>Melissa Kinsey</p>
 						<p>5719 Parc Ridge Way</p>
@@ -109,16 +85,11 @@
 				</div>
 				<div class="col-sm-6">
 					<form action="/action_page.php">
-						<span
-							><label for="fname">First Name</label>
-							<input type="text" id="fname" name="firstname"
-						/></span>
-						<span
-							><label for="lname">Last Name</label>
-							<input type="text" id="lname" name="lastname"
-						/></span>
-						<span
-							><label for="country">Country</label>
+						<span><label for="fname">First Name</label>
+							<input type="text" id="fname" name="firstname" /></span>
+						<span><label for="lname">Last Name</label>
+							<input type="text" id="lname" name="lastname" /></span>
+						<span><label for="country">Country</label>
 							<select id="country" name="country">
 								<option value="USA">USA</option>
 								<option value="Austria">Austria</option>
@@ -144,24 +115,12 @@
 								<option value="UK">UK</option>
 								<option value="Ukraine">Ukraine</option>
 								<option value="Other">Other</option>
-							</select></span
-						>
-						<span
-							><label for="subject">Subject</label>
-							<input
-								type="text"
-								id="subject"
-								name="subject"
-								placeholder="Topic"
-						/></span>
-						<span
-							><label for="comments">Comment or question</label>
-							<input
-								type="text"
-								id="comments"
-								name="comments"
-								placeholder="What can I do for you?"
-						/></span>
+							</select></span>
+						<span><label for="subject">Subject</label>
+							<input type="text" id="subject" name="subject" placeholder="Topic" /></span>
+						<span><label for="comments">Comment or question</label>
+							<input type="text" id="comments" name="comments"
+								placeholder="What can I do for you?" /></span>
 						<span><input type="submit" value="Submit" /></span>
 					</form>
 				</div>
@@ -170,4 +129,5 @@
 		<!--FOOTER-->
 		<div id="footer"></div>
 	</body>
+
 </html>

@@ -6,13 +6,16 @@
 		<a class="link" href="infographics.html">Infographics</a>
 		<a class="link" href="logos.html">Logos</a>
 		<a class="link" href="contact.html">Contact</a>
-	</ul>
+		</ul>
 </div>
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script>
-	$(function () {
-		$("a").each(function () {
-			if ($(this).prop("href") == window.location.href) {
+	$(function ()
+	{
+		$("a").each(function ()
+		{
+			if ($(this).prop("href") == window.location.href)
+			{
 				$(this).addClass("active");
 			}
 		});
