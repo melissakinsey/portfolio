@@ -1,5 +1,4 @@
 /* NAVIGATION */
-
 .nav-container {
 	display: inline-block;
 	width: 100%;
@@ -9,31 +8,20 @@
 	position: fixed;
 	top: 0;
 }
-.nav-item {
+.nav-item, div#header{
 	font-size: 1rem;
 	text-size-adjust: 70%;
 	display: inline-block;
 	position: fixed;
 	top: 0;
 	width: 100%;
+	background-color: #e4fdf4
 }
-div#header {
-	background-color: #e4fdf4;
-}
-a:link {
-	color: #57947b;
-	padding-right: 2rem;
-}
-a:visited {
-	color: #57947b;
-	padding-right: 2rem;
-}
-a:hover {
-	color: #73c5a3;
-	padding-right: 2rem;
-}
+a:link,
+a:visited,
+a:hover,
 a:active {
-	color: #9eb3ab;
+	color: #57947b;
 	padding-right: 2rem;
 }
 
