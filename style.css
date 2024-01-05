@@ -74,8 +74,7 @@ div.legend-bar {
 	margin: 0;
 	background-color: #e4fdf4;
 	font-size: 1rem;
-	justify-content: left;
-	text-align: left;
+	justify-items: center;
 	margin: 10px 0px 0px 0px;
 	padding-left: 2rem;
 	border-bottom: 0;
