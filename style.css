@@ -23,6 +23,25 @@ div#header {
 	height: auto;
 	background-color: #e4fdf4
 }
+/* BOXES */
+.collapse {
+	background-color: #35c48d;
+	border: none;
+	outline: none;
+	font-size: 25px;
+}
+ 
+.active,
+.collapse:hover {
+	background-color: #ffffff;
+}
+ 
+.text {
+	background-color: #d0f4e6;
+	display: none;
+	font-size: 20px;
+}
+
 /* LINKS */
 a:link {
 	color: #52957b;
