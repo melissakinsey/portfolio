@@ -11,6 +11,7 @@
 	justify-content: center;
 	position: fixed;
 	top: 0;
+	z-index: 1;
 }
 
 .nav-item,
@@ -18,7 +19,7 @@ div#header {
 	font-size: 1rem;
 	text-size-adjust: auto;
 	display: inline-block;
-	position: fixed;
+	position: sticky;
 	width: 100%;
 	height: auto;
 	background-color: #e4fdf4
@@ -199,14 +200,17 @@ h3 {
 
 .container-fluid {
 	padding: 0%;
+	position: sticky;
 }
 
 div.container-1 {
-	margin-top: 2rem;
+	margin-top: 0;
 	margin-bottom: 0; 
-	padding-top: 2rem;
+	padding-top: 0;
 	padding-bottom: 0;
 	background-color: #e4fdf4;
+	position: sticky;
+	z-index: 2;
 }
 
 /* ~Rows~ */
@@ -310,6 +314,7 @@ div.col-sm-4 {
 	max-height: none;
 	justify-content: center;
 	position: sticky;
+	z-index: 3;
 }
 
 p#jumbotron {
@@ -339,24 +344,6 @@ i {
 	text-align: center;
 	width: 100%;
 	filter: drop-shadow(0 0.15rem #02020221);
-}
-
-i.fab {
-	font-size: 45px;
-	color: #52957b;
-	padding-top: 7%;
-	padding-bottom: 5%;
-	padding-left: 0%;
-	padding-right: 0%;
-}
-
-i.fas {
-	font-size: 44px;
-	color: #52957b;
-	padding-top: 7%;
-	padding-bottom: 5%;
-	padding-left: 0%;
-	padding-right: 0%;
 }
 
 /* INPUT AREAS*/
@@ -432,11 +419,12 @@ div.contact {
 
 #logo {
 	padding-top: 8vh;
+	position: sticky;
 }
 
 li {
 	display: inline-block;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	text-align: left;
 	width: 100%;
