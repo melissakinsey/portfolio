@@ -404,6 +404,7 @@ div.contact {
 	text-align: right;
 	padding-top: 0.5rem;
 	margin-top: 2rem;
+	text-decoration: none;
 }
 
 #logo {
@@ -415,7 +416,7 @@ li {
 	display: inline-block;
 	position: sticky;
 	top: 0;
-	text-align: left;
+	text-align: center;
 	width: 100%;
 	background-color: #e4fdf4;
 	font-family: "Red Rose", cursive;
