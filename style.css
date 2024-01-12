@@ -9,9 +9,9 @@
 	height: auto;
 	background-color: #e4fdf4;
 	justify-content: center;
-	position: fixed;
+	position: sticky;
 	top: 0;
-	z-index: 1;
+	z-index: 2;
 }
 
 .nav-item,
@@ -22,7 +22,8 @@ div#header {
 	position: sticky;
 	width: 100%;
 	height: auto;
-	background-color: #e4fdf4
+	background-color: #e4fdf4;
+	z-index: 1
 }
 /* BOXES */
 .collapse {
@@ -284,7 +285,7 @@ div.col-sm-3 {
 }
 
 div.col-sm-4 {
-	padding-top: 2rem;
+	padding-top: 0.5rem;
 }
 
 .col-sm-3 {
@@ -325,18 +326,15 @@ p#jumbotron {
 }
 
 /* ~Images~ */
-img {
-	border-radius: 8px;
-}
 
 img.img-responsive {
-	margin-bottom: 1rem;
-	margin-top: 3rem;
+	padding-top: 0;
+	margin-top: 0rem;
 	border-radius: 15px 15px 15px 15px;
 }
 
 img.shadow {
-	filter: drop-shadow(0 0 0.15rem #c6c9ca);
+	filter: drop-shadow(0 0 0.15rem #86c5ad)
 }
 
 /* ~Icons~ */
@@ -415,6 +413,7 @@ div.contact {
 	height: 2rem;
 	text-align: right;
 	padding-top: 0.5rem;
+	margin-top: 2rem;
 }
 
 #logo {
