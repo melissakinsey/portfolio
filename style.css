@@ -5,7 +5,7 @@
 
 .nav-container {
 	display: inline-block;
-	width: 100%;
+	min-width: 100vw;
 	height: auto;
 	background-color: #e4fdf4;
 	justify-content: center;
@@ -20,7 +20,7 @@ div#header {
 	text-size-adjust: auto;
 	display: inline-block;
 	position: sticky;
-	width: 100%;
+	min-width: 100vw;
 	height: auto;
 	background-color: #e4fdf4;
 	z-index: 1
@@ -64,16 +64,13 @@ a:active {
 /* ~HTML~ */
 html {
 	font-size: 1rem;
-	height: 100%;
 }
 
 /* ~Body~ */
 body {
-	height: 100%;
-	min-height: 1800px;
+	max-height: 100%;
 	min-width: 400px;
-	overflow-x: hidden;
-	max-width: 100%;
+	overflow: scroll;
 }
 
 /* ~Paragraphs~ */
@@ -97,15 +94,15 @@ legend {
 	max-width: 400px;
 	justify-content: center;
 	text-align: center;
-	margin: 0;
-	border-bottom: 0;
+	margin: 1rem;
+	padding-bottom: 2rem;
 }
 
 div.legend-bar {
 	font-family: "Red Rose", cursive;
 	font-weight: 200;
 	line-height: 1.5em;
-	width: 100vw;
+	min-width: 100vw;
 	color: #57947b;
 	margin: 0;
 	background-color: #e4fdf4;
@@ -169,22 +166,19 @@ h3 {
 	width: 100%;
 	justify-content: flex-end;
 	padding-right: 10px;
-	margin: 20px 20px 20px 20px;
+	margin: 20px;
 }
 
 /* POSITIONING ELEMENTS
 ~Containers~ */
 #logo-container {
-	margin: 0;
-	padding: 3%;
 	background-color: #e4fdf4;
+	min-width: 100vw;
 }
 
 .flex-container {
-	width: 100%;
-	height: 30%;
-	padding: 10px;
-	margin: 0;
+	min-width: 100vw;
+	padding: 1rem;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -195,20 +189,21 @@ h3 {
 }
 
 .container-2 {
+	min-width: 100vw;
 	text-align: center;
 	background-color: #e4fdf4
 }
 
 .container-fluid {
-	padding: 0%;
+	min-width: 100vw;
+	padding: 0;
 	position: sticky;
 }
 
 div.container-1 {
-	margin-top: 0;
-	margin-bottom: 0; 
-	padding-top: 0;
-	padding-bottom: 0;
+	margin: 0;
+	padding: 0;
+	min-width: 100vw;
 	background-color: #e4fdf4;
 	position: sticky;
 	z-index: 2;
@@ -226,12 +221,6 @@ div.row {
 	margin: 0;
 	background-color: white;
 	justify-content: center;
-}
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
 }
 
 /* ~Columns~ */
@@ -298,7 +287,7 @@ div.col-sm-4 {
 	margin-top: 3rem;
 	margin-bottom: 1rem;
 	align-items: center;
-	border-radius: 15px 15px 15px 15px;
+	border-radius: 15px;
 }
 
 /* ~Jumbotron~ */
@@ -312,6 +301,7 @@ div.col-sm-4 {
 	line-height: 1rem;
 	text-align: center;
 	max-width: none;
+	min-width: 100%;
 	max-height: none;
 	justify-content: center;
 	position: sticky;
@@ -330,7 +320,7 @@ p#jumbotron {
 img.img-responsive {
 	padding-top: 0;
 	margin-top: 0rem;
-	border-radius: 15px 15px 15px 15px;
+	border-radius: 15px;
 }
 
 img.shadow {
@@ -450,6 +440,7 @@ li {
 @media (max-width: 800px) {
 	.flex-container {
 		flex-flow: row wrap;
+		min-width: 100vw;
 	}
 
 	@media (min-width: 640px) and (max-width: 1023px) {
