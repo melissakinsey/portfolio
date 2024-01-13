@@ -263,7 +263,7 @@ div.col-full {
 
 div.col-sm-2 {
 	margin-top: 1rem;
-	align-items: center;
+	text-align: center;
 	padding-bottom: 0;
 }
 
@@ -410,6 +410,7 @@ div.contact {
 #logo {
 	padding-top: 8vh;
 	position: sticky;
+	text-align: center;
 }
 
 li {
@@ -419,7 +420,7 @@ li {
 	text-align: center;
 	width: 100%;
 	background-color: #e4fdf4;
-	font-family: "Red Rose", cursive;
+	font-family: "Caveat";
 	padding-top: 1%;
 	padding-left: 3%;
 	padding-bottom: 2%;
@@ -427,7 +428,6 @@ li {
 	font-size: 28px;
 	color: #52957b;
 	text-size-adjust: 70%;
-	/* list-style: none; */
 }
 
 /* MOBILE RESPONSIVENESS */
