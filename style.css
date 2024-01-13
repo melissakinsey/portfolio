@@ -129,14 +129,12 @@ h1 {
 }
 
 h1.special {
-	font-family: "Red Rose", cursive;
+	font-family: "Caveat";
 	font-weight: 400;
 	color: black;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	justify-content: center;
 	text-align: center;
-	/* padding-right: 5px;
-	padding-left: 5px; */
 	display: block;
 	margin-top: 2%;
 	margin-left: 0;
