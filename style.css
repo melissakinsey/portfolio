@@ -25,6 +25,7 @@ div#header {
 	background-color: #e4fdf4;
 	z-index: 1
 }
+
 /* BOXES */
 .collapse {
 	background-color: #35c48d;
@@ -32,12 +33,12 @@ div#header {
 	outline: none;
 	font-size: 25px;
 }
- 
+
 .active,
 .collapse:hover {
 	background-color: #ffffff;
 }
- 
+
 .text {
 	background-color: #d0f4e6;
 	display: none;
@@ -47,15 +48,21 @@ div#header {
 /* LINKS */
 a:link {
 	color: #52957b;
-	padding: 1rem;
+	padding-top: .25rem;
+	padding-bottom: .25rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	text-decoration: none;
 }
+
 a:visited {
 	color: #52957b;
 }
+
 a:hover {
 	color: #35c48d;
 }
+
 a:active {
 	color: #52957b;
 }
@@ -76,7 +83,7 @@ body {
 /* ~Paragraphs~ */
 p {
 	font-family: "Avenir";
-	font-weight:300;
+	font-weight: 300;
 	line-height: 1.25em;
 	color: black;
 	font-size: 1rem;
@@ -422,45 +429,42 @@ li {
 	width: 100%;
 	background-color: #e4fdf4;
 	font-family: "Avenir";
-	padding-top: 1%;
-	padding-left: 3%;
-	padding-bottom: 2%;
-	padding-right: 0%;
-	font-size: 28px;
+	padding-top: .25rem;
+	padding-bottom: 1.25rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-size: 24px;
 	color: #52957b;
-	text-size-adjust: 70%;
 }
 
 /* MOBILE RESPONSIVENESS */
 /* ~Page height~ */
-@media (min-width: 768px) {
-	.bd-placeholder-img-lg {
-		font-size: 3.5rem;
-	}
-}
 
 @media (max-width: 800px) {
 	.flex-container {
 		flex-flow: row wrap;
 		min-width: 100vw;
+		font-size: min(4vw, 1rem);
 	}
 
 	@media (min-width: 640px) and (max-width: 1023px) {
 		html {
-			font-size: 1.0625rem;
+			font-size: min(4vw, 1rem);
 		}
 	}
 
 	@media (min-width: 1024px) and (max-width: 1279px) {
 		html {
-			font-size: 1.125rem;
+			font-size: min(4vw, 1rem);
 		}
 	}
 
 	/* Viewport width*/
 	@media (min-width: 1280px) {
 		html {
-			font-size: 1.1875rem;
+			font-size: min(4vw, 1rem);
 		}
 	}
 }
+
+
