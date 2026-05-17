@@ -1,143 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>Contact</title>
 
-	<head>
-		<script src="https://code.jquery.com/jquery-3.3.1.js"
-			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-		<script>
-			$(function ()
-			{
-				$("#header").load("header.html");
-				$("#footer").load("footer.html");
-			});
-		</script>
-		<!--Title-->
-		<title>Contact</title>
-		<!--Favicon-->
-		<link rel="shortcut icon" type="image/png" href="favicon.png" />
-		<!--Encoding-->
-		<meta charset="UTF-8" />
-		<!--Metatext-->
-		<meta name="Portfolio" />
-		<!--SEO Keywords-->
-		<meta name="keywords"
-			content="portfolio, coding-boot-camp, technical-writing, documentation, programming, engineering, slate" />
-		<!--Author-->
-		<meta name="author" content="Melissa Kinsey" />
-		<!--Viewport Dimensions-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!--Bootstrap Link-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-		<!-- Google Fonts Link -->
-		<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap"
-			rel="stylesheet" />
-		<!--CSS Link-->
-		<link rel="stylesheet" href="style.css" />
-		</head>
-		<body>		
-		<!--NAV HEADER-->
-		<div id="header"></div>
-		<!--BEGIN CONTAINER-1-->
-		<div class="container-1">
-			<div class="jumbotron">
-				<div class="container text-center">
-					<img src="assets/name-5.png" width="70%" />
-					<p id="jumbotron">
-						I'm a tenacious, results-driven leader with tons of tech writing and content development experience and at least a respectable level of technical expertise. At Amazon Devices & Services, I founded a thriving Slack channel, #grammar-medics, that's now grown to 4,000 members. I serve as a Document Bar Raiser team lead, handle all Alexa Music, Radio, and Podcasts tech docs, and develop AI and other courses for Alexa Learning Lab. <br>
-                        <br>
-                        In my free time, I'm (still) trying to learn German. Fahrvergnügen.
-					</p>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      fetch("head-common.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.head.insertAdjacentHTML("beforeend", data);
+        });
+    </script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--NAV HEADER-->
+    <div id="header"></div>
+    <!--BEGIN CONTAINER-1-->
+    <div class="container-1">
+      <div class="jumbotron">
+        <div class="container text-center">
+          <img src="assets/name-5.png" width="70%" />
+          <p id="jumbotron">
+            I'm a tenacious, results-driven leader with tons of tech writing and
+            content development experience and at least a respectable level of
+            technical expertise. At Amazon Devices & Services, I founded a
+            thriving Slack channel, #grammar-medics, that's now grown to 4,000
+            members. I serve as a Document Bar Raiser team lead, handle all
+            Alexa Music, Radio, and Podcasts tech docs, and develop AI and other
+            courses for Alexa Learning Lab. <br />
+            <br />
+            In my free time, I'm (still) trying to learn German. Fahrvergnügen.
+          </p>
 
-					<div class="col-sm-4">
-						<p style="font-size:1.25rem">
-							<a href="https://github.com/melissakinsey"><img src="assets/github-mark.png">
-								GitHub
-							</a>
-						</p>
-					</div>
-					<div class="col-sm-4">
-						<p style="font-size:1.25rem">
-							<a href="http://www.linkedin.com/in/melissajaynekinsey/"><img
-									src="assets/linkedin-icon.png">
-								LinkedIn
-							</a>
-						</p>
-					</div>
-					<div class="col-sm-4">
-						<p style="font-size:1.25rem">
-							<a href="assets/resume.pdf"><img src="assets/resume-icon.png">
-								Resume
-							</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+          <div class="col-sm-4">
+            <p style="font-size: 1.25rem">
+              <a href="https://github.com/melissakinsey"
+                ><img src="assets/github-mark.png" />
+                GitHub
+              </a>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p style="font-size: 1.25rem">
+              <a href="http://www.linkedin.com/in/melissajaynekinsey/"
+                ><img src="assets/linkedin-icon.png" />
+                LinkedIn
+              </a>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p style="font-size: 1.25rem">
+              <a href="assets/resume.pdf"
+                ><img src="assets/resume-icon.png" />
+                Resume
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<div class="container-fluid bg-3 text-center">
-			<div class="row">
-				<div>
-					<h1 class="special">Contact Me</h1>
-				</div>
-				<div class="col-sm-3">
-					<div>
-					<img src="assets/profile-vertical.png" style="width: auto" class="shadow img-responsive"  id="melissa" alt="Melissa Kinsey" />
-					</div>
-					<div style="align-content: center"> 
-						<img src="assets/decorative-element.png"
-					id="decorative"
-					alt="decorative-element">
-				</div>
-			</div>
-				<div class="col-sm-6">
-					<form action="/action_page.php">
-						<span><label for="fname">First Name</label>
-							<input type="text" id="fname" name="firstname" /></span>
-						<span><label for="lname">Last Name</label>
-							<input type="text" id="lname" name="lastname" /></span>
-						<span><label for="country">Country</label>
-							<br>
-							<br>
-							<br><select id="country" name="country">
-								<option value="USA">USA</option>
-								<option value="Austria">Austria</option>
-								<option value="Bangladesh">Bangladesh</option>
-								<option value="Canada">Canada</option>
-								<option value="China">China</option>
-								<option value="Dominican Republic">
-									Dominican Republic
-								</option>
-								<option value="Germany">Germany</option>
-								<option value="India">India</option>
-								<option value="Iran">Iran</option>
-								<option value="Iraq">Iraq</option>
-								<option value="Ireland">Ireland</option>
-								<option value="Israel">Israel</option>
-								<option value="Pakistan">Pakistan</option>
-								<option value="Puerto Rico">Puerto Rico</option>
-								<option value="Soviet Union">
-									Soviet Union
-								</option>
-								<option value="Turkey">Turkey</option>
-								<option value="UAE">UAE</option>
-								<option value="UK">UK</option>
-								<option value="Ukraine">Ukraine</option>
-								<option value="Other">Other</option>
-							</select></span>
-						<span><label for="subject">Subject</label>
-							<br>
-							<br>
-							<br><input type="text" id="subject" name="subject" placeholder="Topic" /></span>
-						<span><label for="comments">Comment or question</label>
-							<input type="text" id="comments" name="comments"
-								placeholder="What can I do for you?" /></span>
-						<span><input type="submit" value="Submit" /></span>
-					</form>
-				</div>
-			</div>
-		</div>
-		<!--FOOTER-->
-		<div id="footer"></div>
-	</body>
-
+    <div class="container-fluid bg-3 text-center">
+      <div class="row">
+        <div>
+          <h1 class="special">Contact Me</h1>
+        </div>
+        <div class="col-sm-3">
+          <div>
+            <img
+              src="assets/profile-vertical.png"
+              style="width: auto"
+              class="shadow img-responsive"
+              id="melissa"
+              alt="Melissa Kinsey"
+            />
+          </div>
+          <div style="align-content: center">
+            <img
+              src="assets/decorative-element.png"
+              id="decorative"
+              alt="decorative-element"
+            />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <form action="/action_page.php">
+            <span
+              ><label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname"
+            /></span>
+            <span
+              ><label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname"
+            /></span>
+            <span
+              ><label for="country">Country</label>
+              <br />
+              <br />
+              <br /><select id="country" name="country">
+                <option value="USA">USA</option>
+                <option value="Austria">Austria</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Germany">Germany</option>
+                <option value="India">India</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Israel">Israel</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Soviet Union">Soviet Union</option>
+                <option value="Turkey">Turkey</option>
+                <option value="UAE">UAE</option>
+                <option value="UK">UK</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Other">Other</option>
+              </select></span
+            >
+            <span
+              ><label for="subject">Subject</label>
+              <br />
+              <br />
+              <br /><input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Topic"
+            /></span>
+            <span
+              ><label for="comments">Comment or question</label>
+              <input
+                type="text"
+                id="comments"
+                name="comments"
+                placeholder="What can I do for you?"
+            /></span>
+            <span><input type="submit" value="Submit" /></span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--FOOTER-->
+    <div id="footer"></div>
+  </body>
 </html>
