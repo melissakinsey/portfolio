@@ -1,136 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>Infographics</title>
 
-	<head>
-		<script src="https://code.jquery.com/jquery-3.3.1.js"
-			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-		<script>
-			$(function ()
-			{
-				$("#header").load("header.html");
-				$("#footer").load("footer.html");
-			});
-		</script>
-		<!--Title-->
-		<title>Infographics</title>
-		<!--Favicon-->
-		<link rel="shortcut icon" type="image/png" href="favicon.png" />
-		<!--Encoding-->
-		<meta charset="UTF-8" />
-		<!--Metatext-->
-		<meta name="Portfolio" />
-		<!--SEO Keywords-->
-		<meta name="keywords"
-			content="portfolio, coding-boot-camp, technical-writing, documentation, programming, engineering, communications, infographics, slate" />
-		<!--Author-->
-		<meta name="author" content="Melissa Kinsey" />
-		<!--Viewport Dimensions-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!--Bootstrap Link-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-		<!-- Google Fonts Link -->
-		<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap"
-			rel="stylesheet" />
-		<!--CSS Link-->
-		<link rel="stylesheet" href="style.css" />
-	</head>
-
-	<body>
-		<!--NAV HEADER-->
-		<div id="header"></div>
-		<!--BEGIN CONTAINER-1-->
-		<div class="container-1">
-			<div class="jumbotron">
-				<div class="container text-center">
-					<img src="assets/name-5.png" width="70%" />
-					<p id="jumbotron">
-						No learner wants to be greeted by a wall of text when they launch a course. Colorful
-						illustrations make courses more inviting and convey complex concepts better than words alone.
-					</p>
-				</div>
-			</div>
-		</div>
-		<!--BEGIN CONTAINER-2-->
-		<div class="container-fluid bg-3 text-center">
-			<h1 class="special">Infographics</h1>
-			<div class="row justify-items-center">
-				<div>
-					<img src="assets/AMZN-agent-workflow.png" style="width: auto; max-width: 800px"
-						alt="Infographic showing the agent SDK workflow" />
-				</div>
-				<div class="legend-bar">
-					Agent SDK workflow
-				</div>
-			</div>
-			<br>
-			<div class="row justify-items-center">
-				<div>
-					<img src="assets/AMZN-dynamic-inputs.png" style="width: auto; max-width: 800px"
-						alt="Infographic showing dynamic inputs to an agent SDK" />
-				</div>
-				<br>
-				<div class="legend-bar">
-					Dynamic inputs to an SDK
-				</div>
-			</div>
-			<br>
-			<br>
-			<div class="row justify-items-center">
-				<div>
-					<img src="assets/AMZN-request-handler.png" style="width: auto; max-width: 800px"
-						alt="Infographic showing how an agent receives and responds to requests" />
-				</div>
-				<br>
-				<br>
-				<div class="legend-bar">
-					Agent request handler
-				</div>
-			</div>
-			<br>
-			<br>
-			<div class="row justify-items-center">
-				<div>
-					<img src="assets/CH-ordering-process.png" style="width: auto; max-width: 800px"
-						alt="Infographic showing the API ordering process" />
-				</div>
-				<br>
-				<br>
-				<div class="legend-bar">
-					API ordering process
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<div class="row justify-items-center">
-				<div>
-					<img src="assets/BCS-auth-before-after.png" style="width: auto; max-width: 800px"
-						alt="Infographic showing implicit and explicit authorization" />
-				</div>
-				<br>
-				<br>
-				<div class="legend-bar">
-					Implicit and explicit authorization (before, <i>left</i>; after, <i>right</i>)
-				</div>
-			</div>
-			<br>
-			<br>
-			<div class="row justify-items-center">
-				<div>
-					<img src="assets/CH-uml-offer-config.png" style="width: auto; max-width: 800px"
-						alt="Offerconfiguration in a payment API" />
-				</div>
-				<br>
-				<br>
-				<div class="legend-bar">
-					Offer configuration in a payment API (before, <i>left</i>; after, <i>right</i>)
-				</div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<!--FOOTER-->
-		<div id="footer"></div>
-	</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      fetch("head-common.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.head.insertAdjacentHTML("beforeend", data);
+        });
+    </script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--NAV HEADER-->
+    <div id="header"></div>
+    <!--BEGIN CONTAINER-1-->
+    <div class="container-1">
+      <div class="jumbotron">
+        <div class="container text-center">
+          <img src="assets/name-5.png" width="70%" />
+          <p id="jumbotron">
+            No learner wants to be greeted by a wall of text when they launch a
+            course. Colorful illustrations make courses more inviting and convey
+            complex concepts better than words alone.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--BEGIN CONTAINER-2-->
+    <div class="container-fluid bg-3 text-center">
+      <h1 class="special">Infographics</h1>
+      <div class="row justify-items-center">
+        <div>
+          <img
+            src="assets/AMZN-agent-workflow.png"
+            style="width: auto; max-width: 800px"
+            alt="Infographic showing the agent SDK workflow"
+          />
+        </div>
+        <div class="legend-bar">Agent SDK workflow</div>
+      </div>
+      <br />
+      <div class="row justify-items-center">
+        <div>
+          <img
+            src="assets/AMZN-dynamic-inputs.png"
+            style="width: auto; max-width: 800px"
+            alt="Infographic showing dynamic inputs to an agent SDK"
+          />
+        </div>
+        <br />
+        <div class="legend-bar">Dynamic inputs to an SDK</div>
+      </div>
+      <br />
+      <br />
+      <div class="row justify-items-center">
+        <div>
+          <img
+            src="assets/AMZN-request-handler.png"
+            style="width: auto; max-width: 800px"
+            alt="Infographic showing how an agent receives and responds to requests"
+          />
+        </div>
+        <br />
+        <br />
+        <div class="legend-bar">Agent request handler</div>
+      </div>
+      <br />
+      <br />
+      <div class="row justify-items-center">
+        <div>
+          <img
+            src="assets/CH-ordering-process.png"
+            style="width: auto; max-width: 800px"
+            alt="Infographic showing the API ordering process"
+          />
+        </div>
+        <br />
+        <br />
+        <div class="legend-bar">API ordering process</div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div class="row justify-items-center">
+        <div>
+          <img
+            src="assets/BCS-auth-before-after.png"
+            style="width: auto; max-width: 800px"
+            alt="Infographic showing implicit and explicit authorization"
+          />
+        </div>
+        <br />
+        <br />
+        <div class="legend-bar">
+          Implicit and explicit authorization (before, <i>left</i>; after,
+          <i>right</i>)
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="row justify-items-center">
+        <div>
+          <img
+            src="assets/CH-uml-offer-config.png"
+            style="width: auto; max-width: 800px"
+            alt="Offerconfiguration in a payment API"
+          />
+        </div>
+        <br />
+        <br />
+        <div class="legend-bar">
+          Offer configuration in a payment API (before, <i>left</i>; after,
+          <i>right</i>)
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!--FOOTER-->
+    <div id="footer"></div>
+  </body>
 </html>
