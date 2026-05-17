@@ -5,6 +5,12 @@ title: Writing Samples – Melissa Kinsey
 
 <!doctype html>
 <html lang="en">
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
   <head>
     {% include head.html %}
     <title>{{ page.title }}</title>
@@ -161,81 +167,88 @@ title: Writing Samples – Melissa Kinsey
         </div>
       </div>
     </div>
-    <div class="col-sm-3">
-      <p>
-        Electronic Health Record (Elsevier)
-        <br /><a href="samples/sample-book-pages.pdf">
-          <img
-            src="assets/stethoscope.png"
-            class="shadow img-responsive"
-            style="width: 100%"
-            alt=""
-          /><br />
-        </a>
-      </p>
-      <legend>
-        Elsevier (Saunders) asked me to help write a first-edition textbook,
-        <i>The Electronic Health Record for the Physician's Office</i>, for
-        which I was credited as co-author.
-      </legend>
-    </div>
-    <div class="col-sm-3">
-      <p>
-        Life Partners (Blue Waters Group)
-        <br /><a href="samples/partners-for-life.pdf">
-          <img
-            src="assets/microscope.png"
-            class="shadow img-responsive"
-            style="width: 100%"
-            alt="Microscope icon, courtesy AdrianoKF/Pixabay"
-          /><br />
-        </a>
-      </p>
-      <legend>
-        Biomicrofluidics technology was new when I wrote this piece a few years
-        ago on behalf of The Blue Waters Group. The article profiles a Notre
-        Dame scientist who paired up with a biotech entrepreneur to develop a
-        handheld diagnostic tool.
-      </legend>
-    </div>
-    <div class="col-sm-3">
-      <p>
-        The Digestive System (Healthline.com)
-        <br /><a href="samples/digestive-system.pdf">
-          <img
-            src="assets/digestive-system.png"
-            class="shadow img-responsive"
-            style="width: 100%"
-            alt="Digestive system icon, courtesy mcmurryjulie/Pixabay"
-          />
-        </a>
-      </p>
-      <legend>
-        When Healthline.com was just getting off the ground, the editors asked
-        me to write a series of "Learning Center" articles on various body
-        systems. This is one of my favorites.
-      </legend>
-    </div>
-    <div class="col-sm-3">
-      <p>
-        How the Eye Works (Lighthouse)
-        <br /><a href="samples/how-the-eye-works.pdf">
-          <img
-            src="assets/glasses.png"
-            class="shadow img-responsive"
-            style="width: 100%"
-            alt="Eyeglasses. Adapted from a photo by Morris Huberland (1909–1974), courtesy of the New York Public Library."
-          />
-          <br />
-        </a>
-      </p>
-      <legend>
-        This piece is from a series of articles I wrote for Lighthouse
-        International, a charitable organization that supports people with
-        blindness or low vision.
-      </legend>
-    </div>
+    <!--BEGIN CONTAINER-5-->
+    <div class="container-fluid bg-3 text-center">
+      <div class="row">
+        <div class="col-sm-3">
+          <p>
+            Electronic Health Record (Elsevier)
+            <br /><a href="samples/sample-book-pages.pdf">
+              <img
+                src="assets/stethoscope.png"
+                class="shadow img-responsive"
+                style="width: 100%"
+                alt=""
+              /><br />
+            </a>
+          </p>
+          <legend>
+            Elsevier (Saunders) asked me to help write a first-edition textbook,
+            <i>The Electronic Health Record for the Physician's Office</i>, for
+            which I was credited as co-author.
+          </legend>
+        </div>
 
+        <div class="col-sm-3">
+          <p>
+            Life Partners (Blue Waters Group)
+            <br /><a href="samples/partners-for-life.pdf">
+              <img
+                src="assets/microscope.png"
+                class="shadow img-responsive"
+                style="width: 100%"
+                alt="Microscope icon, courtesy AdrianoKF/Pixabay"
+              /><br />
+            </a>
+          </p>
+          <legend>
+            Biomicrofluidics technology was new when I wrote this piece a few
+            years ago on behalf of The Blue Waters Group. The article profiles a
+            Notre Dame scientist who paired up with a biotech entrepreneur to
+            develop a handheld diagnostic tool.
+          </legend>
+        </div>
+
+        <div class="col-sm-3">
+          <p>
+            The Digestive System (Healthline.com)
+            <br /><a href="samples/digestive-system.pdf">
+              <img
+                src="assets/digestive-system.png"
+                class="shadow img-responsive"
+                style="width: 100%"
+                alt="Digestive system icon, courtesy mcmurryjulie/Pixabay"
+              />
+            </a>
+          </p>
+          <legend>
+            When Healthline.com was just getting off the ground, the editors
+            asked me to write a series of "Learning Center" articles on various
+            body systems. This is one of my favorites.
+          </legend>
+        </div>
+
+        <div class="col-sm-3">
+          <p>
+            How the Eye Works (Lighthouse)
+            <br /><a href="samples/how-the-eye-works.pdf">
+              <img
+                src="assets/glasses.png"
+                class="shadow img-responsive"
+                style="width: 100%"
+                alt="Eyeglasses. Adapted from a photo by Morris Huberland (1909–1974), courtesy of the New York Public Library."
+              />
+              <br />
+            </a>
+          </p>
+          <legend>
+            This piece is from a series of articles I wrote for Lighthouse
+            International, a charitable organization that supports people with
+            blindness or low vision.
+          </legend>
+        </div>
+      </div>
+    </div>
     <!--BEGIN FOOTER-->
     <div id="footer"></div>
   </body>

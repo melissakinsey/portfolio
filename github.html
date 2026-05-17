@@ -1,27 +1,21 @@
+---
+layout: none
+title: GitHub – Melissa Kinsey
+---
+
 <!doctype html>
 <html lang="en">
   <head>
-    <title>GitHub</title>
-
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      fetch("head-common.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.head.insertAdjacentHTML("beforeend", data);
-        });
-    </script>
+    {% include head.html %}
+    <title>{{ page.title }}</title>
     <script>
       $(function () {
         $("#header").load("header.html");
         $("#footer").load("footer.html");
       });
     </script>
-  </head>	<body>
+  </head>
+<body>
 		<!--NAV HEADER-->
 		<div id="header"></div>
 		<!--BEGIN CONTAINER-1-->
