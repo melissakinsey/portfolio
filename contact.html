@@ -1,89 +1,130 @@
-<body>
-  <div id="header"></div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Melissa Kinsey</title>
 
-  <main>
-    <section class="contact-hero">
-      <div class="contact-wrap">
-        <div class="name-lockup">
-          <img
-            src="assets/name-5.png"
-            class="name-image"
-            alt="Melissa Kinsey"
-          />
-        </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
 
-        <div class="bio-row">
-          <div class="photo-col">
-            <img
-              src="assets/profile-vertical.png"
-              class="profile-photo"
-              alt="Melissa Kinsey standing outdoors"
-            />
-          </div>
+    <script>
+      fetch("head-common.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.head.insertAdjacentHTML("beforeend", data);
+        });
+    </script>
 
-          <div class="bio-col">
-            <div class="bio-copy">
-              <p>
-                I'm a senior technical writer and content developer who builds
-                precise documentation for people who can't afford to get it
-                wrong.
-              </p>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
 
-              <p>
-                My unique background combines medical publishing experience,
-                technical versatility, and AI fluency. Working in senior roles
-                at Amazon Alexa, Bayer Crop Science, and the Allen Institute for
-                Immunology has given me hands-on experience documenting SDKs,
-                AI/ML systems, and tools ranging from Pixi to pipelines.
-              </p>
+    <style>
+      .contact-hero {
+        background-color: #e4fdf4;
+        padding: 2rem 1.5rem 2.5rem;
+      }
 
-              <p>
-                In my free time, I'm training to hike one of Europe's
-                long-distance e-paths—and having survived a week with friends
-                near Berlin speaking nothing but German last fall, I'm starting
-                to believe I might actually pull it off. Fahrvergnügen.
-              </p>
-            </div>
-          </div>
-        </div>
+      .contact-wrap {
+        max-width: 1080px;
+        margin: 0 auto;
+      }
 
-        <div class="icon-row">
-          <div class="icon-link">
-            <a
-              href="https://github.com/melissakinsey"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="assets/github-mark.png" alt="GitHub" />
-              <span>GitHub</span>
-            </a>
-          </div>
+      .name-lockup {
+        text-align: center;
+        margin-bottom: 1.75rem;
+      }
 
-          <div class="icon-link">
-            <a
-              href="https://www.linkedin.com/in/melissajaynekinsey/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="assets/linkedin-icon.png" alt="LinkedIn" />
-              <span>LinkedIn</span>
-            </a>
-          </div>
+      .name-image {
+        width: min(100%, 620px);
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+      }
 
-          <div class="icon-link">
-            <a
-              href="assets/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="assets/resume-icon.png" alt="Resume" />
-              <span>Resume</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+      .bio-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2.25rem;
+      }
 
-  <div id="footer"></div>
-</body>
+      .photo-col {
+        flex: 0 1 360px;
+        max-width: 360px;
+      }
+
+      .profile-photo {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border: 3px solid rgba(117, 184, 163, 0.25);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      }
+
+      .bio-col {
+        flex: 1 1 520px;
+        max-width: 600px;
+      }
+
+      .bio-copy {
+        font-size: clamp(1.2rem, 1rem + 0.7vw, 1.45rem);
+        line-height: 1.7;
+        text-align: left;
+      }
+
+      .bio-copy p {
+        margin: 0 0 1rem;
+      }
+
+      .bio-copy p:last-child {
+        margin-bottom: 0;
+      }
+
+      .icon-row {
+        margin: 2rem auto 0;
+        max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 3rem;
+        padding-top: 0.25rem;
+      }
+
+      .icon-link a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.65rem;
+        font-size: clamp(1.2rem, 1rem + 0.5vw, 1.4rem);
+        color: #6aa28f;
+        text-decoration: none;
+      }
+
+      .icon-link a:hover,
+      .icon-link a:focus {
+        opacity: 0.9;
+        text-decoration: none;
+      }
+
+      .icon-link img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+
+      @media (max-width: 767.98px) {
+        .contact-hero {
+          padding: 1.75rem 1rem 2rem;
+        }
+
+        .name-lockup 
