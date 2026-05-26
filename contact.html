@@ -29,7 +29,7 @@
     <style>
       .contact-hero {
         background-color: #e4fdf4;
-        padding: 2.5rem 1.5rem 3.5rem;
+        padding: 2rem 1.5rem 2.5rem;
       }
 
       .contact-wrap {
@@ -39,7 +39,7 @@
 
       .name-lockup {
         text-align: center;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.75rem;
       }
 
       .name-image {
@@ -55,12 +55,12 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 2.5rem;
+        gap: 2.25rem;
       }
 
       .photo-col {
-        flex: 0 1 340px;
-        max-width: 340px;
+        flex: 0 1 360px;
+        max-width: 360px;
       }
 
       .profile-photo {
@@ -73,51 +73,47 @@
       }
 
       .bio-col {
-        flex: 1 1 500px;
-        max-width: 580px;
+        flex: 1 1 520px;
+        max-width: 600px;
       }
 
       .bio-copy {
-        font-size: 1.3rem;
-        line-height: 1.65;
+        font-size: clamp(1.2rem, 1rem + 0.7vw, 1.45rem);
+        line-height: 1.7;
         text-align: left;
       }
 
       .bio-copy p {
-        margin: 0 0 1.2rem;
+        margin: 0 0 1rem;
       }
 
       .bio-copy p:last-child {
         margin-bottom: 0;
       }
 
-      .contact-links {
-        background-color: #fff;
-        padding: 2.25rem 1.5rem 3rem;
-      }
-
       .icon-row {
+        margin: 2rem auto 0;
         max-width: 900px;
-        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1.5rem 4rem;
+        gap: 1rem 3rem;
+        padding-top: 0.25rem;
       }
 
       .icon-link a {
         display: inline-flex;
         align-items: center;
         gap: 0.65rem;
-        font-size: 1.45rem;
+        font-size: clamp(1.2rem, 1rem + 0.5vw, 1.4rem);
         color: #6aa28f;
         text-decoration: none;
       }
 
       .icon-link a:hover,
       .icon-link a:focus {
-        text-decoration: none;
         opacity: 0.9;
+        text-decoration: none;
       }
 
       .icon-link img {
@@ -128,138 +124,7 @@
 
       @media (max-width: 767.98px) {
         .contact-hero {
-          padding: 2rem 1rem 2.5rem;
+          padding: 1.75rem 1rem 2rem;
         }
 
-        .name-lockup {
-          margin-bottom: 1.75rem;
-        }
-
-        .bio-row {
-          gap: 1.5rem;
-        }
-
-        .photo-col,
-        .bio-col {
-          max-width: 100%;
-          flex-basis: 100%;
-        }
-
-        .profile-photo {
-          max-width: 320px;
-          margin: 0 auto;
-        }
-
-        .bio-copy {
-          font-size: 1.1rem;
-          text-align: center;
-        }
-
-        .contact-links {
-          padding: 1.75rem 1rem 2.5rem;
-        }
-
-        .icon-row {
-          gap: 1rem 2rem;
-        }
-
-        .icon-link a {
-          font-size: 1.2rem;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <div id="header"></div>
-
-    <main>
-      <section class="contact-hero">
-        <div class="contact-wrap">
-          <div class="name-lockup">
-            <img
-              src="assets/name-5.png"
-              class="name-image"
-              alt="Melissa Kinsey"
-            />
-          </div>
-
-          <div class="bio-row">
-            <div class="photo-col">
-              <img
-                src="assets/profile-vertical.png"
-                class="profile-photo"
-                alt="Melissa Kinsey standing outdoors"
-              />
-            </div>
-
-            <div class="bio-col">
-              <div class="bio-copy">
-                <p>
-                  I'm a senior technical writer and content developer who builds
-                  precise documentation for people who can't afford to get it
-                  wrong. My unique background combines medical publishing
-                  experience, technical versatility, and AI fluency.
-                </p>
-
-                <p>
-                  Working in senior roles at Amazon Alexa, Bayer Crop Science,
-                  and the Allen Institute for Immunology has given me hands-on
-                  experience documenting SDKs, AI/ML systems, and tools ranging
-                  from Pixi to pipelines.
-                </p>
-
-                <p>
-                  In my free time, I'm training to hike one of Europe's
-                  long-distance e-paths—and having survived a week with friends
-                  near Berlin speaking nothing but German last fall, I'm
-                  starting to believe I might actually pull it off.
-                  Fahrvergnügen.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact-links">
-        <div class="icon-row">
-          <div class="icon-link">
-            <a
-              href="https://github.com/melissakinsey"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="assets/github-mark.png" alt="GitHub" />
-              <span>GitHub</span>
-            </a>
-          </div>
-
-          <div class="icon-link">
-            <a
-              href="https://www.linkedin.com/in/melissajaynekinsey/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="assets/linkedin-icon.png" alt="LinkedIn" />
-              <span>LinkedIn</span>
-            </a>
-          </div>
-
-          <div class="icon-link">
-            <a
-              href="assets/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="assets/resume-icon.png" alt="Resume" />
-              <span>Resume</span>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <div id="footer"></div>
-  </body>
-</html>
+        .name-lockup 
