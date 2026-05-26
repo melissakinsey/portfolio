@@ -1,228 +1,52 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact | Melissa Kinsey</title>
+<body>
+  <div id="header"></div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
+  <main>
+    <section class="contact-hero">
+      <div class="contact-wrap">
+        <div class="name-lockup">
+          <img
+            src="assets/name-5.png"
+            class="name-image"
+            alt="Melissa Kinsey"
+          />
+        </div>
 
-    <script>
-      fetch("head-common.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.head.insertAdjacentHTML("beforeend", data);
-        });
-    </script>
-
-    <script>
-      $(function () {
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
-      });
-    </script>
-
-    <style>
-      .contact-hero {
-        background-color: #e4fdf4;
-        padding: 2.5rem 1.5rem 3.5rem;
-      }
-
-      .contact-wrap {
-        max-width: 1080px;
-        margin: 0 auto;
-      }
-
-      .name-lockup {
-        text-align: center;
-        margin-bottom: 2.5rem;
-      }
-
-      .name-image {
-        width: min(100%, 620px);
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-      }
-
-      .bio-row {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 2.5rem;
-      }
-
-      .photo-col {
-        flex: 0 1 340px;
-        max-width: 340px;
-      }
-
-      .profile-photo {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        display: block;
-        border: 3px solid rgba(117, 184, 163, 0.25);
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-      }
-
-      .bio-col {
-        flex: 1 1 500px;
-        max-width: 580px;
-      }
-
-      .bio-copy {
-        font-size: 1.3rem;
-        line-height: 1.65;
-        text-align: left;
-      }
-
-      .bio-copy p {
-        margin: 0 0 1.2rem;
-      }
-
-      .bio-copy p:last-child {
-        margin-bottom: 0;
-      }
-
-      .contact-links {
-        background-color: #fff;
-        padding: 2.25rem 1.5rem 3rem;
-      }
-
-      .icon-row {
-        max-width: 900px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.5rem 4rem;
-      }
-
-      .icon-link a {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.65rem;
-        font-size: 1.45rem;
-        color: #6aa28f;
-        text-decoration: none;
-      }
-
-      .icon-link a:hover,
-      .icon-link a:focus {
-        text-decoration: none;
-        opacity: 0.9;
-      }
-
-      .icon-link img {
-        width: 30px;
-        height: 30px;
-        object-fit: contain;
-      }
-
-      @media (max-width: 767.98px) {
-        .contact-hero {
-          padding: 2rem 1rem 2.5rem;
-        }
-
-        .name-lockup {
-          margin-bottom: 1.75rem;
-        }
-
-        .bio-row {
-          gap: 1.5rem;
-        }
-
-        .photo-col,
-        .bio-col {
-          max-width: 100%;
-          flex-basis: 100%;
-        }
-
-        .profile-photo {
-          max-width: 320px;
-          margin: 0 auto;
-        }
-
-        .bio-copy {
-          font-size: 1.1rem;
-          text-align: center;
-        }
-
-        .contact-links {
-          padding: 1.75rem 1rem 2.5rem;
-        }
-
-        .icon-row {
-          gap: 1rem 2rem;
-        }
-
-        .icon-link a {
-          font-size: 1.2rem;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <div id="header"></div>
-
-    <main>
-      <section class="contact-hero">
-        <div class="contact-wrap">
-          <div class="name-lockup">
+        <div class="bio-row">
+          <div class="photo-col">
             <img
-              src="assets/name-5.png"
-              class="name-image"
-              alt="Melissa Kinsey"
+              src="assets/profile-vertical.png"
+              class="profile-photo"
+              alt="Melissa Kinsey standing outdoors"
             />
           </div>
 
-          <div class="bio-row">
-            <div class="photo-col">
-              <img
-                src="assets/profile-vertical.png"
-                class="profile-photo"
-                alt="Melissa Kinsey standing outdoors"
-              />
-            </div>
+          <div class="bio-col">
+            <div class="bio-copy">
+              <p>
+                I'm a senior technical writer and content developer who builds
+                precise documentation for people who can't afford to get it
+                wrong.
+              </p>
 
-            <div class="bio-col">
-              <div class="bio-copy">
-                <p>
-                  I'm a senior technical writer and content developer who builds
-                  precise documentation for people who can't afford to get it
-                  wrong. My unique background combines medical publishing
-                  experience, technical versatility, and AI fluency.
-                </p>
+              <p>
+                My unique background combines medical publishing experience,
+                technical versatility, and AI fluency. Working in senior roles
+                at Amazon Alexa, Bayer Crop Science, and the Allen Institute for
+                Immunology has given me hands-on experience documenting SDKs,
+                AI/ML systems, and tools ranging from Pixi to pipelines.
+              </p>
 
-                <p>
-                  Working in senior roles at Amazon Alexa, Bayer Crop Science,
-                  and the Allen Institute for Immunology has given me hands-on
-                  experience documenting SDKs, AI/ML systems, and tools ranging
-                  from Pixi to pipelines.
-                </p>
-
-                <p>
-                  In my free time, I'm training to hike one of Europe's
-                  long-distance e-paths—and having survived a week with friends
-                  near Berlin speaking nothing but German last fall, I'm
-                  starting to believe I might actually pull it off.
-                  Fahrvergnügen.
-                </p>
-              </div>
+              <p>
+                In my free time, I'm training to hike one of Europe's
+                long-distance e-paths—and having survived a week with friends
+                near Berlin speaking nothing but German last fall, I'm starting
+                to believe I might actually pull it off. Fahrvergnügen.
+              </p>
             </div>
           </div>
         </div>
-      </section>
 
-      <section class="contact-links">
         <div class="icon-row">
           <div class="icon-link">
             <a
@@ -257,9 +81,9 @@
             </a>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <div id="footer"></div>
-  </body>
-</html>
+  <div id="footer"></div>
+</body>
