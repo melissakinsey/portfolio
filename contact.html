@@ -27,85 +27,144 @@
     </script>
 
     <style>
-      .contact-section {
-        padding-top: 2rem;
-      }
-
-      .contact-card {
-        padding: 2rem;
-      }
-
-      .bio-row,
-      .icon-row {
-        margin-top: 20px;
+      .contact-hero {
         background-color: #e4fdf4;
+        padding: 2.5rem 1.5rem 3.5rem;
+      }
+
+      .contact-wrap {
+        max-width: 1080px;
+        margin: 0 auto;
+      }
+
+      .name-lockup {
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+
+      .name-image {
+        width: min(100%, 620px);
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
       }
 
       .bio-row {
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        padding: 1.5rem;
+        justify-content: center;
+        gap: 2.5rem;
       }
 
-      .bio-copy {
-        text-align: left;
-      }
-
-      .bio-copy p + p {
-        margin-top: 1rem;
+      .photo-col {
+        flex: 0 1 340px;
+        max-width: 340px;
       }
 
       .profile-photo {
         width: 100%;
+        max-width: 100%;
         height: auto;
+        display: block;
+        border: 3px solid rgba(117, 184, 163, 0.25);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      }
+
+      .bio-col {
+        flex: 1 1 500px;
+        max-width: 580px;
+      }
+
+      .bio-copy {
+        font-size: 1.3rem;
+        line-height: 1.65;
+        text-align: left;
+      }
+
+      .bio-copy p {
+        margin: 0 0 1.2rem;
+      }
+
+      .bio-copy p:last-child {
+        margin-bottom: 0;
+      }
+
+      .contact-links {
+        background-color: #fff;
+        padding: 2.25rem 1.5rem 3rem;
       }
 
       .icon-row {
-        padding: 1rem 0;
-      }
-
-      .icon-link {
-        font-size: 1.25rem;
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem 4rem;
       }
 
       .icon-link a {
         display: inline-flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 0.65rem;
+        font-size: 1.45rem;
+        color: #6aa28f;
         text-decoration: none;
       }
 
+      .icon-link a:hover,
+      .icon-link a:focus {
+        text-decoration: none;
+        opacity: 0.9;
+      }
+
       .icon-link img {
-        width: 28px;
-        height: 28px;
+        width: 30px;
+        height: 30px;
         object-fit: contain;
       }
 
-      .name-image {
-        width: 70%;
-        max-width: 520px;
-        height: auto;
-        margin: 0 auto;
-      }
-
       @media (max-width: 767.98px) {
-        .contact-card {
-          padding: 1.25rem;
+        .contact-hero {
+          padding: 2rem 1rem 2.5rem;
+        }
+
+        .name-lockup {
+          margin-bottom: 1.75rem;
         }
 
         .bio-row {
-          padding: 1rem;
+          gap: 1.5rem;
+        }
+
+        .photo-col,
+        .bio-col {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+
+        .profile-photo {
+          max-width: 320px;
+          margin: 0 auto;
         }
 
         .bio-copy {
-          margin-top: 1rem;
+          font-size: 1.1rem;
+          text-align: center;
         }
 
-        .icon-link {
-          margin-bottom: 1rem;
+        .contact-links {
+          padding: 1.75rem 1rem 2.5rem;
         }
 
-        .name-image {
-          width: 90%;
+        .icon-row {
+          gap: 1rem 2rem;
+        }
+
+        .icon-link a {
+          font-size: 1.2rem;
         }
       }
     </style>
@@ -114,83 +173,88 @@
   <body>
     <div id="header"></div>
 
-    <main class="container-1 contact-section">
-      <section class="container">
-        <div class="contact-card">
-          <div class="text-center">
+    <main>
+      <section class="contact-hero">
+        <div class="contact-wrap">
+          <div class="name-lockup">
             <img
               src="assets/name-5.png"
-              class="name-image img-fluid"
+              class="name-image"
               alt="Melissa Kinsey"
             />
           </div>
 
-          <div class="row bio-row">
-            <div class="col-sm-4">
+          <div class="bio-row">
+            <div class="photo-col">
               <img
                 src="assets/profile-vertical.png"
-                class="shadow img-fluid profile-photo"
-                alt="Melissa Kinsey portrait"
+                class="profile-photo"
+                alt="Melissa Kinsey standing outdoors"
               />
             </div>
 
-            <div class="col-sm-8 bio-copy">
-              <p>
-                I'm a senior technical writer and content developer who builds
-                precise documentation for people who can't afford to get it
-                wrong. My background combines medical publishing experience,
-                technical versatility, and AI fluency.
-              </p>
+            <div class="bio-col">
+              <div class="bio-copy">
+                <p>
+                  I'm a senior technical writer and content developer who builds
+                  precise documentation for people who can't afford to get it
+                  wrong. My unique background combines medical publishing
+                  experience, technical versatility, and AI fluency.
+                </p>
 
-              <p>
-                Working in senior roles at Amazon Alexa, Bayer Crop Science, and
-                the Allen Institute for Immunology has given me hands-on
-                experience documenting SDKs, AI/ML systems, and tools ranging
-                from Pixi to pipelines.
-              </p>
+                <p>
+                  Working in senior roles at Amazon Alexa, Bayer Crop Science,
+                  and the Allen Institute for Immunology has given me hands-on
+                  experience documenting SDKs, AI/ML systems, and tools ranging
+                  from Pixi to pipelines.
+                </p>
 
-              <p>
-                In my free time, I'm training to hike one of Europe's
-                long-distance e-paths—and having survived a week with friends
-                near Berlin speaking nothing but German last fall, I'm starting
-                to believe I might actually pull it off. Fahrvergnügen.
-              </p>
+                <p>
+                  In my free time, I'm training to hike one of Europe's
+                  long-distance e-paths—and having survived a week with friends
+                  near Berlin speaking nothing but German last fall, I'm
+                  starting to believe I might actually pull it off.
+                  Fahrvergnügen.
+                </p>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="row text-center icon-row">
-            <div class="col-sm-4 icon-link">
-              <a
-                href="https://github.com/melissakinsey"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="assets/github-mark.png" alt="GitHub" />
-                <span>GitHub</span>
-              </a>
-            </div>
+      <section class="contact-links">
+        <div class="icon-row">
+          <div class="icon-link">
+            <a
+              href="https://github.com/melissakinsey"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/github-mark.png" alt="GitHub" />
+              <span>GitHub</span>
+            </a>
+          </div>
 
-            <div class="col-sm-4 icon-link">
-              <a
-                href="https://www.linkedin.com/in/melissajaynekinsey/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="assets/linkedin-icon.png" alt="LinkedIn" />
-                <span>LinkedIn</span>
-              </a>
-            </div>
+          <div class="icon-link">
+            <a
+              href="https://www.linkedin.com/in/melissajaynekinsey/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/linkedin-icon.png" alt="LinkedIn" />
+              <span>LinkedIn</span>
+            </a>
+          </div>
 
-            <div class="col-sm-4 icon-link">
-              <a
-                href="assets/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="assets/resume-icon.png" alt="Resume" />
-                <span>Resume</span>
-              </a>
-            </div>
+          <div class="icon-link">
+            <a
+              href="assets/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/resume-icon.png" alt="Resume" />
+              <span>Resume</span>
+            </a>
           </div>
         </div>
       </section>
