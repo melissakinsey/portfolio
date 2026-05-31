@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact | Melissa Kinsey</title>
 
     <script
@@ -8,6 +10,7 @@
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"
     ></script>
+
     <script>
       fetch("head-common.html")
         .then((response) => response.text())
@@ -15,85 +18,244 @@
           document.head.insertAdjacentHTML("beforeend", data);
         });
     </script>
+
     <script>
       $(function () {
         $("#header").load("header.html");
         $("#footer").load("footer.html");
       });
     </script>
+
+    <style>
+      .contact-hero {
+        background-color: #e4fdf4;
+        padding: 2rem 1.5rem 2.5rem;
+      }
+
+      .contact-wrap {
+        max-width: 1080px;
+        margin: 0 auto;
+      }
+
+      .name-lockup {
+        text-align: center;
+        margin-bottom: 1.75rem;
+      }
+
+      .name-image {
+        width: min(100%, 620px);
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+      }
+
+      .bio-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2.25rem;
+      }
+
+      .photo-col {
+        flex: 0 1 360px;
+        max-width: 360px;
+      }
+
+      .profile-photo {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border: 3px solid rgba(117, 184, 163, 0.25);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      }
+
+      .bio-col {
+        flex: 1 1 520px;
+        max-width: 600px;
+      }
+
+      .bio-copy {
+        font-size: clamp(1.2rem, 1rem + 0.7vw, 1.45rem);
+        line-height: 1.7;
+        text-align: left;
+      }
+
+      .bio-copy p {
+        margin: 0 0 1rem;
+      }
+
+      .bio-copy p:last-child {
+        margin-bottom: 0;
+      }
+
+      .icon-row {
+        margin: 2rem auto 0;
+        max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 3rem;
+        padding-top: 0.25rem;
+      }
+
+      .icon-link a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.65rem;
+        font-size: clamp(1.2rem, 1rem + 0.5vw, 1.4rem);
+        color: #6aa28f;
+        text-decoration: none;
+      }
+
+      .icon-link a:hover,
+      .icon-link a:focus {
+        opacity: 0.9;
+        text-decoration: none;
+      }
+
+      .icon-link img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+
+      @media (max-width: 767.98px) {
+        .contact-hero {
+          padding: 1.75rem 1rem 2rem;
+        }
+
+        .name-lockup {
+          margin-bottom: 1.5rem;
+        }
+
+        .bio-row {
+          gap: 1.25rem;
+        }
+
+        .photo-col,
+        .bio-col {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+
+        .profile-photo {
+          max-width: 320px;
+          margin: 0 auto;
+        }
+
+        .bio-copy {
+          text-align: center;
+          font-size: 1.12rem;
+          line-height: 1.65;
+        }
+
+        .icon-row {
+          margin-top: 1.5rem;
+          gap: 0.85rem 1.5rem;
+        }
+
+        .icon-link a {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
   </head>
+
   <body>
-    <!--NAV HEADER-->
     <div id="header"></div>
 
-    <!--BEGIN CONTAINER-1-->
-    <div class="container-1" style="padding-top: 2rem;">
-      <div class="jumbotron">
-        <div class="container">
-          <!-- Name image -->
-          <div class="text-center">
-            <img src="assets/name-5.png" width="70%" alt="Melissa Kinsey" />
+    <main>
+      <section class="contact-hero">
+        <div class="contact-wrap">
+          <div class="name-lockup">
+            <img
+              src="assets/name-5.png"
+              class="name-image"
+              alt="Melissa Kinsey"
+            />
           </div>
 
-          <!-- Photo + bio row -->
-          <div class="row" style="align-items: center; margin-top: 20px; background-color: #e4fdf4;">            <div class="col-sm-4">
+          <div class="bio-row">
+            <div class="photo-col">
               <img
                 src="assets/profile-vertical.png"
-                class="shadow img-responsive"
-                style="width: 100%; margin-right: 20px"
-                alt="Melissa Kinsey"
+                class="profile-photo"
+                alt="Melissa Kinsey standing outdoors"
               />
             </div>
-            <div class="col-sm-8 text-left">
-              <div class="col-sm-8" style="text-align: left;">
-                I'm a senior technical writer and content developer who builds
-                precise documentation for people who can't afford to get it
-                wrong. My unique background combines medical publishing
-                experience, technical versatility, and AI fluency. <br /><br />
-                Working in senior roles at Amazon Alexa, Bayer Crop Science, and
-                the Allen Institute for Immunology has given me hands-on
-                experience documenting SDKs, AI/ML systems, and tools ranging
-                from Pixi to pipelines.<br /><br />
-                In my free time, I'm training to hike one of Europe's
-                long-distance e-paths—and having survived a week with friends
-                near Berlin speaking nothing but German last fall, I'm starting
-                to believe I might actually pull it off. Fahrvergnügen.
-              </p>
+
+            <div class="bio-col">
+              <div class="bio-copy">
+                <p>
+                  I'm a senior technical writer and content developer who builds
+                  precise documentation for people who can't afford to get it
+                  wrong.
+                </p>
+
+                <p>
+                  My unique background combines medical publishing experience,
+                  technical versatility, and AI fluency.
+                </p>
+
+                <p>
+                  Working in senior roles at Amazon Alexa, Bayer Crop Science,
+                  and the Allen Institute for Immunology has given me hands-on
+                  experience documenting SDKs, AI/ML systems, and tools ranging
+                  from Pixi to pipelines.
+                </p>
+
+                <p>
+                  In my free time, I'm training to hike one of Europe's
+                  long-distance e-paths—and having survived a week with friends
+                  near Berlin speaking nothing but German last fall, I'm
+                  starting to believe I might actually pull it off.
+                  Fahrvergnügen.
+                </p>
+              </div>
             </div>
           </div>
 
-          <!-- Icon links row -->
-          <div class="row text-center" style="margin-top: 20px">
-            <div class="row text-center" style="margin-top: 20px; background-color: #e4fdf4;">
-              <p style="font-size: 1.25rem">
-                <a href="https://github.com/melissakinsey">
-                  <img src="assets/github-mark.png" alt="GitHub" />
-                  GitHub
-                </a>
-              </p>
+          <div class="icon-row">
+            <div class="icon-link">
+              <a
+                href="https://github.com/melissakinsey"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="assets/github-mark.png" alt="GitHub" />
+                <span>GitHub</span>
+              </a>
             </div>
-            <div class="col-sm-4">
-              <p style="font-size: 1.25rem">
-                <a href="http://www.linkedin.com/in/melissajaynekinsey/">
-                  <img src="assets/linkedin-icon.png" alt="LinkedIn" />
-                  LinkedIn
-                </a>
-              </p>
+
+            <div class="icon-link">
+              <a
+                href="https://www.linkedin.com/in/melissajaynekinsey/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="assets/linkedin-icon.png" alt="LinkedIn" />
+                <span>LinkedIn</span>
+              </a>
             </div>
-            <div class="col-sm-4">
-              <p style="font-size: 1.25rem">
-                <a href="assets/resume.pdf">
-                  <img src="assets/resume-icon.png" alt="Resume" />
-                  Resume
-                </a>
-              </p>
+
+            <div class="icon-link">
+              <a
+                href="assets/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="assets/resume-icon.png" alt="Resume" />
+                <span>Resume</span>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <!--FOOTER-->
     <div id="footer"></div>
   </body>
 </html>
