@@ -1,470 +1,468 @@
 /* NAVIGATION */
 :root {
-	color-scheme: light dark;
+  color-scheme: light dark;
 }
 
 .nav-container {
-	display: inline-block;
-	min-width: 100vw;
-	height: auto;
-	background-color: #e4fdf4;
-	justify-content: center;
-	position: sticky;
-	top: 0;
-	z-index: 2;
+  display: inline-block;
+  min-width: 100vw;
+  height: auto;
+  background-color: #e4fdf4;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .nav-item,
 div#header {
-	font-size: 1rem;
-	text-size-adjust: auto;
-	display: inline-block;
-	position: sticky;
-	min-width: 100vw;
-	height: auto;
-	background-color: #e4fdf4;
-	z-index: 1
+  font-size: 1rem;
+  text-size-adjust: auto;
+  display: inline-block;
+  position: sticky;
+  min-width: 100vw;
+  height: auto;
+  background-color: #e4fdf4;
+  z-index: 1;
 }
 
 /* BOXES */
 .collapse {
-	background-color: #35c48d;
-	border: none;
-	outline: none;
-	font-size: 25px;
+  background-color: #35c48d;
+  border: none;
+  outline: none;
+  font-size: 25px;
 }
 
 .active,
 .collapse:hover {
-	background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .text {
-	background-color: #d0f4e6;
-	display: none;
-	font-size: 20px;
+  background-color: #d0f4e6;
+  display: none;
+  font-size: 20px;
 }
 
 /* LINKS */
 a:link {
-	color: #52957b;
-	padding-top: .25rem;
-	padding-bottom: .25rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	text-decoration: none;
+  color: #52957b;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
 }
 
 a:visited {
-	color: #52957b;
+  color: #52957b;
 }
 
 a:hover {
-	color: #35c48d;
+  color: #35c48d;
 }
 
 a:active {
-	color: #52957b;
+  color: #52957b;
 }
 
 /* GENERAL STYLES */
 /* ~HTML~ */
 html {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 /* ~Body~ */
 body {
-	max-height: 100%;
-	min-width: 400px;
-	overflow: scroll;
+  max-height: 100%;
+  min-width: 400px;
+  overflow: scroll;
 }
 
 /* ~Paragraphs~ */
 p {
-	font-family: "Avenir";
-	font-weight: 300;
-	line-height: 1.25em;
-	color: black;
-	font-size: 1rem;
-	max-width: 400px;
-	justify-content: center;
-	text-align: center;
-	margin: 0;
+  font-family: "Avenir";
+  font-weight: 300;
+  line-height: 1.25em;
+  color: black;
+  font-size: 1rem;
+  max-width: 400px;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
 }
 
 legend {
-	font-family: "Avenir Light";
-	font-weight: 200;
-	line-height: 1em;
-	color: black;
-	font-size: 0.9rem;
-	max-width: 400px;
-	justify-content: center;
-	text-align: center;
-	margin: 1rem;
-	padding-bottom: 2rem;
+  font-family: "Avenir Light";
+  font-weight: 200;
+  line-height: 1em;
+  color: black;
+  font-size: 0.9rem;
+  max-width: 400px;
+  text-align: left;
+  white-space: normal;
+  margin: 1rem;
+  padding-bottom: 2rem;
 }
 
 div.legend-bar {
-	font-family: "Avenir";
-	font-weight: 200;
-	line-height: 1.5em;
-	min-width: 100vw;
-	color: #57947b;
-	margin: 0;
-	background-color: #e4fdf4;
-	font-size: 1rem;
-	justify-items: center;
-	margin: 10px 0px 0px 0px;
-	padding-left: 2rem;
-	border-bottom: 0;
+  font-family: "Avenir";
+  font-weight: 200;
+  line-height: 1.5em;
+  min-width: 100vw;
+  color: #57947b;
+  margin: 0;
+  background-color: #e4fdf4;
+  font-size: 1rem;
+  justify-items: center;
+  margin: 10px 0px 0px 0px;
+  padding-left: 2rem;
+  border-bottom: 0;
 }
 
 /* ~Heads~ */
 h1 {
-	font-family: "Kalnia";
-	font-weight: 700;
-	color: black;
-	font-size: 2.25rem;
-	padding-right: 5px;
-	padding-left: 5px;
-	display: flex;
-	float: none;
-	top: 0;
-	margin-top: 6%;
-	margin-left: 15%;
+  font-family: "Kalnia";
+  font-weight: 700;
+  color: black;
+  font-size: 2.25rem;
+  padding-right: 5px;
+  padding-left: 5px;
+  display: flex;
+  float: none;
+  top: 0;
+  margin-top: 6%;
+  margin-left: 15%;
 }
 
 h1.special {
-	font-family: "Avenir Medium";
-	font-weight: 400;
-	color: #4f4c7e;
-	font-size: 1.75rem;
-	justify-content: center;
-	text-align: center;
-	display: block;
-	margin-top: 2%;
-	margin-left: 0;
-	margin-right: 0;
+  font-family: "Avenir Medium";
+  font-weight: 400;
+  color: #4f4c7e;
+  font-size: 1.75rem;
+  justify-content: center;
+  text-align: center;
+  display: block;
+  margin-top: 2%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 h2 {
-	font-family: "Kalnia Medium";
-	font-weight: 500;
-	color: black;
-	font-size: 2 rem;
-	padding-right: 5px;
-	padding-left: 5px;
+  font-family: "Kalnia Medium";
+  font-weight: 500;
+  color: black;
+  font-size: 2 rem;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 h3 {
-	font-family: "Kalnia Regular";
-	font-weight: 400;
-	font-size: 0.75rem;
-	color: white;
-	display: flex;
-	position: absolute;
-	flex-flow: row wrap;
-	height: 3rem;
-	background-color: #52957b;
-	justify-content: center;
-	width: 100%;
-	justify-content: flex-end;
-	padding-right: 10px;
-	margin: 20px;
+  font-family: "Kalnia Regular";
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: white;
+  display: flex;
+  position: absolute;
+  flex-flow: row wrap;
+  height: 3rem;
+  background-color: #52957b;
+  justify-content: center;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 10px;
+  margin: 20px;
 }
 
 /* POSITIONING ELEMENTS
 ~Containers~ */
 #logo-container {
-	background-color: #e4fdf4;
-	min-width: 100vw;
+  background-color: #e4fdf4;
+  min-width: 100vw;
 }
 
 .flex-container {
-	min-width: 100vw;
-	padding: 1rem;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  min-width: 100vw;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-2 {
-	min-width: 100vw;
-	text-align: center;
-	background-color: #e4fdf4
+  min-width: 100vw;
+  text-align: center;
+  background-color: #e4fdf4;
 }
 
 .container-fluid {
-	min-width: 100vw;
-	padding: 0;
-	position: sticky;
+  min-width: 100vw;
+  padding: 0;
+  position: sticky;
 }
 
 div.container-1 {
-	margin: 0;
-	padding: 0;
-	min-width: 100vw;
-	background-color: #e4fdf4;
-	position: sticky;
-	z-index: 2;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  background-color: #e4fdf4;
+  position: sticky;
+  z-index: 2;
 }
 
 /* ~Rows~ */
 section.row {
-	justify-content: space-evenly;
-	/* align-items: center; */
-	margin-left: 5%;
-	background-color: #ffffff;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  margin-left: 5%;
+  background-color: #ffffff;
 }
 
 div.row {
-	margin: 0;
-	background-color: white;
-	justify-content: center;
+  margin: 0;
+  background-color: white;
+  justify-content: center;
 }
 
 /* ~Columns~ */
 .column {
-	float: left;
-	width: 50%;
-	margin-top: 6px;
-	padding: 20px;
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
 }
 
 label {
-	font-family: "Avenir";
-	font-size: 24px;
-	font-weight: lighter;
-	margin-top: 2%;
-	margin-bottom: 1%;
-	margin-left: 0;
-	margin-right: 2rem;
-	float: left;
-	align-items: left;
-	max-width: 50%;
+  font-family: "Avenir";
+  font-size: 24px;
+  font-weight: lighter;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 0;
+  margin-right: 2rem;
+  float: left;
+  align-items: left;
+  max-width: 50%;
 }
 
 span {
-	display: block;
-	overflow: hidden;
-	justify-content: center;
+  display: block;
+  overflow: hidden;
+  justify-content: center;
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 
 div.col-full {
-	margin-top: 1rem;
-	margin-left: 2rem;
-	justify-content: center;
-	padding-bottom: 0;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  justify-content: center;
+  padding-bottom: 0;
 }
 
 div.col-sm-2 {
-	margin-top: 1rem;
-	text-align: center;
-	padding-bottom: 0;
+  margin-top: 1rem;
+  text-align: center;
+  padding-bottom: 0;
 }
 
 div.col-sm-3 {
-	margin-top: 1rem;
-	align-items: center;
-	padding-bottom: 0;
+  margin-top: 1rem;
+  align-items: center;
+  padding-bottom: 0;
 }
 
 div.col-sm-4 {
-	padding-top: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .col-sm-3 {
-	padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* ~IDs NOT OTHERWISE SPECIFIED~ */
 
 #melissa {
-	margin-top: 3rem;
-	margin-bottom: 1rem;
-	align-items: center;
-	border-radius: 15px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  border-radius: 15px;
 }
 
 /* ~Jumbotron~ */
 .jumbotron {
-	background-color: #e4fdf4;
-	font-family: "Avenir";
-	font-size: 0.75rem;
-	padding: 0;
-	margin: 0;
-	color: black;
-	line-height: 1rem;
-	text-align: center;
-	max-width: none;
-	min-width: 100%;
-	max-height: none;
-	justify-content: center;
-	position: sticky;
-	z-index: 3;
+  background-color: #e4fdf4;
+  font-family: "Avenir";
+  font-size: 0.75rem;
+  padding: 0;
+  margin: 0;
+  color: black;
+  line-height: 1rem;
+  text-align: center;
+  max-width: none;
+  min-width: 100%;
+  max-height: none;
+  justify-content: center;
+  position: sticky;
+  z-index: 3;
 }
 
 p#jumbotron {
-	font-weight: lighter;
-	margin: auto;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-	max-width: 800px;
+  font-weight: lighter;
+  margin: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  max-width: 800px;
 }
 
 /* ~Images~ */
 
 img.img-responsive {
-	padding-top: 0;
-	margin-top: 0rem;
-	border-radius: 15px;
+  padding-top: 0;
+  margin-top: 0rem;
+  border-radius: 15px;
 }
 
 img.shadow {
-	filter: drop-shadow(0 0 0.15rem #86c5ad)
+  filter: drop-shadow(0 0 0.15rem #86c5ad);
 }
 
 /* ~Icons~ */
 i {
-	text-align: center;
-	width: 100%;
-	filter: drop-shadow(0 0.15rem #02020221);
+  text-align: center;
+  width: 100%;
+  filter: drop-shadow(0 0.15rem #02020221);
 }
 
 /* INPUT AREAS*/
 form {
-	margin: 3rem;
+  margin: 3rem;
 }
 
 input[type="text"],
 select,
 textarea {
-	font-family: "Avenir Medium";
-	font-weight: lighter;
-	width: 80%;
-	padding: 12px;
-	border: 1px solid #cde4db;
-	background-color: #e4fdf4;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-	border-radius: 25px;
+  font-family: "Avenir Medium";
+  font-weight: lighter;
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #cde4db;
+  background-color: #e4fdf4;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 25px;
 }
 
 input[type="submit"] {
-	background-color: #52957b;
-	font-family: "Avenir";
-	font-weight: 500;
-	color: white;
-	padding: 12px 20px;
-	margin-top: 5%;
-	border: none;
-	cursor: pointer;
-	border-radius: 25px;
+  background-color: #52957b;
+  font-family: "Avenir";
+  font-weight: 500;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 5%;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
 }
 
 input[type="submit"]:hover {
-	background-color: #52957b;
-	font-family: "Avenir";
-	font-weight: lighter;
+  background-color: #52957b;
+  font-family: "Avenir";
+  font-weight: lighter;
 }
 
 /*CONTACT ME ELEMENTS*/
 form {
-	margin: 3rem;
+  margin: 3rem;
 }
 
 div.contact {
-	size: 3rem;
+  size: 3rem;
 }
 
 .address {
-	display: inline-block;
-	text-align: center;
-	font-family: "Kalnia";
-	color: #6c837a;
+  display: inline-block;
+  text-align: center;
+  font-family: "Kalnia";
+  color: #6c837a;
 }
 
 /* STICKY FOOTER */
 #footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: #52957b;
-	color: white;
-	font-size: 1rem;
-	font-family: "Avenir Light";
-	font-weight: 500;
-	text-align: right;
-	padding-right: 1rem;
-	height: 2.25rem;
-	text-align: right;
-	padding-top: 0.5rem;
-	margin-top: 2rem;
-	text-decoration: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #52957b;
+  color: white;
+  font-size: 1rem;
+  font-family: "Avenir Light";
+  font-weight: 500;
+  text-align: right;
+  padding-right: 1rem;
+  height: 2.25rem;
+  text-align: right;
+  padding-top: 0.5rem;
+  margin-top: 2rem;
+  text-decoration: none;
 }
 
 #logo {
-	padding-top: 8vh;
-	position: sticky;
-	text-align: center;
+  padding-top: 8vh;
+  position: sticky;
+  text-align: center;
 }
 
 li {
-	display: inline-block;
-	position: sticky;
-	top: 0;
-	text-align: center;
-	width: 100%;
-	background-color: #e4fdf4;
-	font-family: "Avenir";
-	padding-top: .25rem;
-	padding-bottom: 1.25rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	font-size: 24px;
-	color: #52957b;
+  display: inline-block;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #e4fdf4;
+  font-family: "Avenir";
+  padding-top: 0.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 24px;
+  color: #52957b;
 }
 
 /* MOBILE RESPONSIVENESS */
 /* ~Page height~ */
 
 @media (max-width: 800px) {
-	.flex-container {
-		flex-flow: row wrap;
-		min-width: 100vw;
-		font-size: min(4vw, 1rem);
-	}
+  .flex-container {
+    flex-flow: row wrap;
+    min-width: 100vw;
+    font-size: min(4vw, 1rem);
+  }
 
-	@media (min-width: 640px) and (max-width: 1023px) {
-		html {
-			font-size: min(4vw, 1rem);
-		}
-	}
+  @media (min-width: 640px) and (max-width: 1023px) {
+    html {
+      font-size: min(4vw, 1rem);
+    }
+  }
 
-	@media (min-width: 1024px) and (max-width: 1279px) {
-		html {
-			font-size: min(4vw, 1rem);
-		}
-	}
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    html {
+      font-size: min(4vw, 1rem);
+    }
+  }
 
-	/* Viewport width*/
-	@media (min-width: 1280px) {
-		html {
-			font-size: min(4vw, 1rem);
-		}
-	}
+  /* Viewport width*/
+  @media (min-width: 1280px) {
+    html {
+      font-size: min(4vw, 1rem);
+    }
+  }
 }
-
-
