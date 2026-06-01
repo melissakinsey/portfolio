@@ -5,24 +5,23 @@
 
 .nav-container {
   display: inline-block;
+  position: sticky;
   min-width: 100vw;
   height: auto;
   background-color: #e4fdf4;
   justify-content: center;
-  position: sticky;
-  top: 0;
   z-index: 2;
 }
 
 .nav-item,
 div#header {
-  font-size: 1rem;
-  text-size-adjust: auto;
   display: inline-block;
   position: sticky;
+  font-size: 1rem;
   min-width: 100vw;
   height: auto;
   background-color: #e4fdf4;
+  text-size-adjust: auto;
   z-index: 1;
 }
 
@@ -40,18 +39,18 @@ div#header {
 }
 
 .text {
-  background-color: #d0f4e6;
   display: none;
+  background-color: #d0f4e6;
   font-size: 20px;
 }
 
 /* LINKS */
 a:link {
+  justify-content: left;
+  text-align: left;
+  max-width: 400px;
+  padding: 0.25rem 1rem 0.25rem 1rem;
   color: #52957b;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
   text-decoration: none;
 }
 
@@ -70,7 +69,7 @@ a:active {
 /* GENERAL STYLES */
 /* ~HTML~ */
 html {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 /* ~Body~ */
@@ -80,18 +79,19 @@ body {
 
 /* ~Paragraphs~ */
 p {
-  font-family: "Avenir";
-  font-weight: 300;
-  line-height: 1.25em;
-  color: black;
-  font-size: 1rem;
-  max-width: 400px;
-  justify-content: center;
+  justify-content: left;
   text-align: left;
+  max-width: 400px;
   margin: 0;
+  line-height: 1.25em;
+  font-family: "Avenir";
+  font-size: 1rem;
+  font-weight: 300;
+  color: black;
 }
 
 legend {
+  justify-content: left;
   font-family: "Avenir Light";
   font-weight: 200;
   line-height: 1em;
@@ -100,23 +100,20 @@ legend {
   max-width: 400px;
   text-align: left;
   white-space: normal;
-  margin: 1rem;
+  margin: 1rem 0rem 0rem 0rem;
   padding-bottom: 2rem;
 }
 
 div.legend-bar {
   font-family: "Avenir";
   font-weight: 200;
-  line-height: 1.5em;
+  line-height: 3em;
   min-width: 100vw;
-  color: #57947b;
-  margin: 0;
+  color: black;
   background-color: #e4fdf4;
-  font-size: 1rem;
-  justify-items: center;
-  margin: 10px 0px 0px 0px;
-  padding-left: 2rem;
-  border-bottom: 0;
+  font-size: 1.2rem;
+  align-items: left;
+  margin: 0px 0px 0px 20px;
 }
 
 /* ~Heads~ */
@@ -205,7 +202,7 @@ h3 {
 }
 
 div.container-1 {
-  margin: 0;
+  margin-left: 0;
   padding: 0;
   min-width: 100vw;
   background-color: #e4fdf4;
@@ -222,7 +219,7 @@ section.row {
 }
 
 div.row {
-  margin: 0;
+  margin-left: 5%;
   background-color: white;
   justify-content: center;
 }
